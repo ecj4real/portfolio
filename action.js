@@ -1,3 +1,6 @@
+// set current year
+document.getElementById("current_year").innerHTML = new Date().getFullYear();
+
 let api_key = "api-34162D1E805442498B3542DA89A21F85";
 let sendEmail = async (name, email, content) => {
     var myHeaders = new Headers();

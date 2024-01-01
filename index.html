@@ -48,28 +48,6 @@
       </nav>
     
 
-    <!-- Beginning of Hero Section -->
-
-    <!-- <?php 
-      if(isset($_SESSION['error']) && $_SESSION['error'] != ''){?>
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong>Oops!</strong> An Error Occurred
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-          <?php
-          unset($_SESSION['error']);
-      }
-      
-      if(isset($_SESSION['status']) && $_SESSION['status'] != ''){?>
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
-          <strong>Hurray!</strong> Message Sent Successfully.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-          <?php
-          unset($_SESSION['status']);
-      }
-    ?> -->
-
     <section id="Home">
         <div class="hero-section">
             <div class="container">
@@ -319,7 +297,7 @@
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <div class="footer-brand d-lg-flex">
           <!-- <p><a class=" pe-5" href="#">Emegbue Chukwudi</a></p> -->
-          <p class="ft-copyright">© Emegbue Chukwudi <?php echo date('Y'); ?></p>
+          <p class="ft-copyright">© Emegbue Chukwudi <span id="current_year"></span></p>
         </div>
       </ul>
      <div class="footer-brand">

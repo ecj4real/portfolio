@@ -1846,3 +1846,7 @@ body {
   color: #fff !important;
   box-shadow: 0 0 0 3px #fff, 0 2px 8px 0 rgba(255,255,255,0.15);
 }
+
+.dark-theme .lets-talk-btn svg path {
+  fill: #fff !important;
+}

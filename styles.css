@@ -1611,9 +1611,17 @@ body {
     }
 
     .resume-btn {
-        font-size: 12px;
-        min-width: 100px;
-        height: 32px;
+        font-size: 16px !important;
+        min-width: unset !important;
+        max-width: 65vw !important;
+        width: 100%;
+        height: 44px !important;
+        padding: 0 20px !important;
+        border-radius: 24px !important;
+        margin: 0 auto 12px auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* Third Row - Projects */
@@ -1817,4 +1825,24 @@ body {
 .dark-theme .switch-moon {
     background: var(--white);
     color: var(--black);
+}
+
+.dark-theme .github-title, .dark-theme .github-card, .dark-theme .github-card * {
+  color: #fff !important;
+}
+
+.dark-theme .github-btn {
+  background: #fff !important;
+  color: #222 !important;
+  border: 1px solid #7578CC !important;
+}
+.dark-theme .github-btn svg path {
+  stroke: #222 !important;
+}
+
+.dark-theme .resume-btn {
+  border: 3px solid #fff !important;
+  background: var(--white) !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 3px #fff, 0 2px 8px 0 rgba(255,255,255,0.15);
 }

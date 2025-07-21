@@ -419,6 +419,19 @@
         };
         document.getElementById("current-time").textContent =
           now.toLocaleTimeString("en-US", options);
+
+        // Dot movement logic
+        const dot = document.querySelector('.separator-dot');
+        const line = document.querySelector('.separator-line');
+        if (dot && line) {
+          // Use offsetWidth for layout width
+          const seconds = now.getSeconds();
+          const lineWidth = line.offsetWidth;
+          const dotWidth = dot.offsetWidth;
+          const maxLeft = lineWidth - dotWidth;
+          const left = (seconds / 59) * maxLeft;
+          dot.style.left = left + 'px';
+        }
       }
       updateTime();
       setInterval(updateTime, 1000);

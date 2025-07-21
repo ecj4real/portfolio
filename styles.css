@@ -1853,3 +1853,14 @@ body {
 .dark-theme .lets-talk-btn svg path {
   fill: #fff !important;
 }
+
+@media (max-width: 1300px) {
+    .bento-grid {
+        padding: 30px 24px 60px 24px !important;
+    }
+}
+@media (max-width: 1300px) {
+    .nav {
+        padding: 40px 24px !important;
+    }
+}
